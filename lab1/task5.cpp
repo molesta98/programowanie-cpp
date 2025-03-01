@@ -1,5 +1,10 @@
 #include <iostream>
 
+// Stwórz program, który wczyta dwie liczby całkowite od użytkownika i
+// wykona na nich następujące operacje: dodawanie, odejmowanie, mnożenie,
+// dzielenie oraz resztę z dzielenia. Utrwalenie wiedzy na temat operatorów
+// arytmetycznych oraz pracy z liczbami.
+
 int main() {
   int first_number, second_number;
 
