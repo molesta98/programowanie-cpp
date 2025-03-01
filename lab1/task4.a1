@@ -1,6 +1,0 @@
-<?xml version="1.0"?>
-<analyzerinfo hash="4643002982501101838">
-  <FileInfo check="CheckUnusedFunctions">
-    <functiondecl file="lab1/task4.cpp" functionName="main" lineNumber="3"/>
-  </FileInfo>
-</analyzerinfo>
