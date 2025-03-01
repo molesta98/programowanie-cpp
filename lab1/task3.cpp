@@ -13,7 +13,9 @@ int main() {
   std::cout << "Zmienna całkowita: " << a << std::endl;
   std::cout << "Zmienna zmiennoprzecinkowa: " << b << std::endl;
   std::cout << "Zmienna znakowa: " << c << std::endl;
+  std::cout << std::boolalpha;
   std::cout << "Zmienna logiczna: " << d << std::endl;
+  std::cout << std::noboolalpha;
 
   return 0;
 }
