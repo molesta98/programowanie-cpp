@@ -14,5 +14,5 @@ repos:
       args: [--style=Google]
     - id: uncrustify
     - id: cpplint
-      args: ["--filter=-legal/copyright,-zerodiv,-runtime/int,-build/include_what_you_use"]
+      args: ["--filter=-legal/copyright,-zerodiv,-runtime/int,-build/include_what_you_use", "--linelength=120"]
     - id: include-what-you-use

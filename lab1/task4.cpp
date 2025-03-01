@@ -1,5 +1,8 @@
 #include <iostream>
 
+// Napisz program, który pobierze od użytkownika jego imię i wiek,
+// a następnie wyświetli wiadomość powitalną.
+
 int main() {
   std::string name;
   short age;
@@ -12,4 +15,6 @@ int main() {
 
   std::cout << "Witaj, " << name << "!" << " Masz " << age << " lat."
             << std::endl;
+
+  return 0;
 }

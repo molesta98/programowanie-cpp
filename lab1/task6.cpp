@@ -1,5 +1,9 @@
 #include <iostream>
 
+// Napisz program, który pobierze dwie liczby od użytkownika,
+// wyświetli ich sumę, a następnie poinformuje użytkownika,
+// czy wynik jest liczbą parzystą czy nieparzystą.
+
 int main() {
   short first_number, second_number;
   short sum = 0;
@@ -21,4 +25,6 @@ int main() {
   } else {
     std::cout << "Suma jest rowna 0." << std::endl;
   }
+
+  return 0;
 }
