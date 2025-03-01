@@ -1,6 +1,5 @@
 CXX = g++
-CXXFLAGS = -Wall -Wextra -Wdivision-by-zero
-
+CXXFLAGS = -Wall -Wextra -Wno-division-by-zero
 
 BIN_DIR = bin
 
