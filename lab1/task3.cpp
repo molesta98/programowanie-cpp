@@ -6,7 +6,7 @@ int main() {
   char c = 'A';
   bool d = true;
 
-  std::cout << "Zmienna całkowita: " << a << std::endl;
+  std::cout << "Zmienna calkowita: " << a << std::endl;
   std::cout << "Zmienna zmiennoprzecinkowa: " << b << std::endl;
   std::cout << "Zmienna znakowa: " << c << std::endl;
   std::cout << std::boolalpha;
