@@ -20,4 +20,6 @@ int main() {
   std::cout << "Iloraz: " << first_number / second_number << std::endl;
   std::cout << "Reszta z dzielenia: " << first_number % second_number
             << std::endl;
+
+  return 0;
 }

@@ -15,4 +15,6 @@ int main() {
 
   std::cout << "Witaj, " << name << "!" << " Masz " << age << " lat."
             << std::endl;
+
+  return 0;
 }

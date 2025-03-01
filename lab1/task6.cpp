@@ -25,4 +25,6 @@ int main() {
   } else {
     std::cout << "Suma jest rowna 0." << std::endl;
   }
+
+  return 0;
 }
