@@ -1,0 +1,1 @@
+task6.a1::lab1/task6.cpp

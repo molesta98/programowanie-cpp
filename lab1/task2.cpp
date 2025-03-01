@@ -1,8 +1,7 @@
 #include <iostream>
 
 int main() {
-  int a = 5;
-  int b = 3;
+  int a = 5, b = 3;
 
   std::cout << "Liczba a: " << a << std::endl;
   std::cout << "Liczba b: " << b << std::endl;

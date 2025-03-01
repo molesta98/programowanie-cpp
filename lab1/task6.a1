@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+<analyzerinfo hash="17226107227781223321">
+        <error id="moduloAlwaysTrueFalse" severity="warning" msg="Comparison of modulo result is predetermined, because it is always less than 0." verbose="Comparison of modulo result is predetermined, because it is always less than 0." cwe="398" file0="lab1/task6.cpp">
+            <location file="lab1/task6.cpp" line="19" column="17"/>
+        </error>
+        <error id="zerodiv" severity="error" msg="Division by zero." verbose="Division by zero." cwe="369" file0="lab1/task6.cpp">
+            <location file="lab1/task6.cpp" line="19" column="13" info="Division by zero"/>
+        </error>
+  <FileInfo check="CheckUnusedFunctions">
+    <functiondecl file="lab1/task6.cpp" functionName="main" lineNumber="5"/>
+  </FileInfo>
+</analyzerinfo>
