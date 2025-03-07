@@ -6,6 +6,11 @@ int main() {
   std::cout << "Podaj liczbe N: ";
   std::cin >> userValueN;
 
+  if (userValueN < 0) {
+    std::cout << "Podana liczba jest mniejsza od 0" << std::endl;
+    return 1;
+  }
+
   while (userValueN >= i) {
     sum += i;
     i++;
