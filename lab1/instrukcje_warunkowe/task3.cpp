@@ -1,21 +1,21 @@
 #include <iostream>
 
 int main() {
-  int your_number;
+  int yourNumber;
   short even, divisible;
-  std::string even_output, divisible_output;
+  std::string evenOutput, divisibleOutput;
 
   std::cout << "Podaj liczbe calkowita: ";
-  std::cin >> your_number;
+  std::cin >> yourNumber;
 
-  if (your_number > 0) {
-    if (your_number % 2 == 0 && your_number % 3 == 0) {
+  if (yourNumber > 0) {
+    if (yourNumber % 2 == 0 && yourNumber % 3 == 0) {
       even = 0;
       divisible = 0;
-    } else if (your_number % 2 == 0 && your_number % 3 != 0) {
+    } else if (yourNumber % 2 == 0 && yourNumber % 3 != 0) {
       even = 0;
       divisible = 1;
-    } else if (your_number % 2 != 0 && your_number % 3 == 0) {
+    } else if (yourNumber % 2 != 0 && yourNumber % 3 == 0) {
       even = 1;
       divisible = 0;
     } else {
@@ -29,20 +29,20 @@ int main() {
   }
 
   if (even == 0) {
-    even_output = "jest parzysta";
+    evenOutput = "jest parzysta";
   } else {
-    even_output = "jest nieparzysta";
+    evenOutput = "jest nieparzysta";
   }
 
   if (divisible == 0) {
-    divisible_output = "jest podzielna";
+    divisibleOutput = "jest podzielna";
   } else {
-    divisible_output = "nie jest podzielna";
+    divisibleOutput = "nie jest podzielna";
   }
 
-  std::cout << "Liczba " << your_number << " " << even_output << std::endl;
-  std::cout << "Liczba " << your_number << " " << divisible_output
-            << " przez 3." << std::endl;
+  std::cout << "Liczba " << yourNumber << " " << evenOutput << std::endl;
+  std::cout << "Liczba " << yourNumber << " " << divisibleOutput << " przez 3."
+            << std::endl;
 
   return 0;
 }

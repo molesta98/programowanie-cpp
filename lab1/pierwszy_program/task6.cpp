@@ -5,16 +5,16 @@
 // czy wynik jest liczbą parzystą czy nieparzystą.
 
 int main() {
-  short first_number, second_number;
+  short firstNumber, secondNumber;
   short sum = 0;
 
   std::cout << "Podaj pierwsza liczbe: ";
-  std::cin >> first_number;
+  std::cin >> firstNumber;
 
   std::cout << "Podaj druga liczbe: ";
-  std::cin >> second_number;
+  std::cin >> secondNumber;
 
-  sum = first_number + second_number;
+  sum = firstNumber + secondNumber;
   std::cout << "Suma: " << sum << std::endl;
 
   if (sum > 0) {
