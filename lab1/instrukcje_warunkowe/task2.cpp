@@ -2,7 +2,7 @@
 
 int main() {
   float weight, height, bmi;
-  std::string bmi_status;
+  std::string bmiStatus;
 
   std::cout << "Podaj masę ciała w kilogramach: ";
   std::cin >> weight;
@@ -14,13 +14,13 @@ int main() {
   std::cout << "\nTwoje BMI wynosi: " << bmi << std::endl;
 
   if (bmi < 18.5)
-    bmi_status = "Niedowaga";
+    bmiStatus = "Niedowaga";
   else if (bmi >= 18.5 && bmi < 24.9)
-    bmi_status = "W normie";
+    bmiStatus = "W normie";
   else if (bmi >= 24.9 && bmi < 29.9)
-    bmi_status = "Nadwaga";
+    bmiStatus = "Nadwaga";
   else
-    bmi_status = "Otyłość";
+    bmiStatus = "Otyłość";
 
-  std::cout << "Twoj stan wagowy: " << bmi_status << std::endl;
+  std::cout << "Twoj stan wagowy: " << bmiStatus << std::endl;
 }
