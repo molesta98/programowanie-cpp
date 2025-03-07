@@ -1,10 +1,10 @@
 #include <iostream>
 
 int main() {
+  const double KELVIN = 273.15;
   double temperture;
   char temperature_unit;
   std::string temperature_unit_name;
-  const double KELVIN = 273.15;
 
   std::cout << "Podaj temperature w stopniach Celsjusza: ";
   std::cin >> temperture;
