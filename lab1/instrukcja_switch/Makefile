@@ -14,6 +14,5 @@ $(BIN_DIR)/task1: task1.cpp
 $(BIN_DIR)/task2: task2.cpp
 	$(CXX) $(CXXFLAGS) $< -o $@
 
-
 clean:
 	rm -rf $(BIN_DIR)
