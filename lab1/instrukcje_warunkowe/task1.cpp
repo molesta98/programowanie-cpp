@@ -7,7 +7,7 @@ int main() {
   std::cout << "Podaj wynik egzaminu (liczba punktow): ";
   std::cin >> examResult;
 
-  if (examResult >= 0 && exam_result <= 49) {
+  if (examResult >= 0 && examResult <= 49) {
     grade = "Niedostateczna";
   } else if (examResult >= 50 && examResult <= 69) {
     grade = "Dostateczna";
