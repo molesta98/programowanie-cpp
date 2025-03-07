@@ -31,13 +31,8 @@ int main() {
       result = first_number / second_number;
       break;
     default:
-      break;
-  }
-
-  if (operation != '+' && operation != '-' && operation != '*' &&
-      operation != '/') {
-    std::cout << "\nPodano nieprawidlowy znak dzialania." << std::endl;
-    return 1;
+      std::cout << "\nPodano nieprawidlowy znak dzialania." << std::endl;
+      return 1;
   }
 
   std::cout << "\nWynik: " << result << std::endl;
