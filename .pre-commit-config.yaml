@@ -11,8 +11,7 @@ repos:
   rev: v1.3.5
   hooks:
     - id: clang-format
-      args: [--style=Google]
-    - id: uncrustify
+      args: [--style=Google, "-i"]
     - id: cpplint
       args: ["--filter=-legal/copyright,-zerodiv,-runtime/int,-build/include_what_you_use", "--linelength=120"]
     - id: include-what-you-use
