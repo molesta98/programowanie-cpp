@@ -10,9 +10,7 @@
  * - Użyj pętli do-while, aby sprawdzać każdą liczbę w zakresie od 1 do N:
  * - Jeśli liczba jest parzysta, zwiększ licznik parzystych o 1.
  * - Po zakończeniu pętli wyświetl liczbę liczb parzystych na ekranie.
-
-
-*/
+ */
 int main() {
   short userValue;
   const short BEGIN_VALUE = 1;
