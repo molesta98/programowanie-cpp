@@ -10,22 +10,22 @@
  * - Po wyświetleniu wyniku zakończ działanie programu.
  */
 int main() {
-  short userValueN, sum = 0;
+  short N, sum = 0;
   const short BEGIN_VALUE = 1;
 
   std::cout << "Poda liczbe N: ";
-  std::cin >> userValueN;
+  std::cin >> N;
 
-  if (userValueN < BEGIN_VALUE) {
+  if (N < BEGIN_VALUE) {
     std::cout << "Podana liczba jest mniejsza od " << BEGIN_VALUE << std::endl;
     return 1;
   }
 
-  for (short i = 0; i <= userValueN; i++) {
+  for (int i = 0; i <= N; i++) {
     sum += i;
   }
 
-  std::cout << "Suma liczb od " << BEGIN_VALUE << " do " << userValueN
+  std::cout << "Suma liczb od " << BEGIN_VALUE << " do " << N
             << " wynosi: " << sum << std::endl;
 
   return 0;
