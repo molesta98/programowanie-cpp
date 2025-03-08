@@ -1,5 +1,13 @@
 #include <iostream>
 
+/*
+ * Napisz program, który obliczy i wyświetli kwadraty kolejnych liczb od 1 do N,
+ * gdzie N zostanie podane przez użytkownika. Użyj pętli for, aby wykonać to
+ * zadanie.
+ * - Poproś użytkownika o podanie liczby całkowitej N.
+ * - Użyj pętli for, aby obliczyć i wyświetlić kwadrat każdej liczby od 1 do N.
+ * - Po wyświetleniu kwadratów zakończ działanie programu.
+ */
 int main() {
   short userValueN, result = 0, i;
   const short BEGIN_VALUE = 1;
