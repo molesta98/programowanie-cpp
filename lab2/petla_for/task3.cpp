@@ -1,5 +1,19 @@
 #include <iostream>
 
+/*
+ * Napisz program, który wyświetli wszystkie liczby nieparzyste od 1 do N,
+ * gdzie N zostanie podane przez użytkownika. Użyj pętli for, aby wykonać to
+ * zadanie.
+ * - Poproś użytkownika o podanie liczby całkowitej N.
+ * - Użyj pętli for, aby sprawdzić i wyświetlić wszystkie liczby nieparzyste od
+ * 1 do N na ekranie.
+ * - Po wyświetleniu wszystkich liczb nieparzystych zakończ działanie programu.
+ *
+ * Wskazówka:
+ * Aby rozwiązać to zadanie, możesz użyć pętli for, która będzie iterować od 1
+ * do N. W każdej iteracji sprawdzisz, czy liczba jest nieparzysta. Jeśli jest
+ * nieparzysta, wypiszesz ją na ekranie.
+ */
 int main() {
   short userValueN;
   const short BEGIN_VALUE = 1;

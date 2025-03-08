@@ -1,7 +1,9 @@
 #include <iostream>
 
-// Napisz program, który przypisze dwie liczby całkowite do zmiennych,
-// a następnie wyświetli ich sumę, różnicę i iloczyn.
+/*
+ * Napisz program, który przypisze dwie liczby całkowite do zmiennych,
+ * a następnie wyświetli ich sumę, różnicę i iloczyn.
+ */
 
 int main() {
   short a = 5, b = 3;
