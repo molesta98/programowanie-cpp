@@ -11,21 +11,20 @@
  */
 
 int main() {
-  short userValueN, sum = 0, i = 1;
+  short N, sum = 0, i = 1;
 
   std::cout << "Podaj liczbe N: ";
-  std::cin >> userValueN;
+  std::cin >> N;
 
-  if (userValueN < 0) {
+  if (N < 0) {
     std::cout << "Podana liczba jest mniejsza od 0" << std::endl;
     return 1;
   }
 
-  while (userValueN >= i) {
+  while (N >= i) {
     sum += i;
     i++;
   }
 
-  std::cout << "Suma liczb naturalnych do " << userValueN << ": " << sum
-            << std::endl;
+  std::cout << "Suma liczb naturalnych do " << N << ": " << sum << std::endl;
 }
