@@ -23,7 +23,7 @@ $(BIN_DIR)/task4: task4.cpp
 $(BIN_DIR)/task5: task5.cpp
 	$(CXX) $(CXXFLAGS) $< -o $@
 
-$(BIN_DIR)/task5: task6.cpp
+$(BIN_DIR)/task6: task6.cpp
 	$(CXX) $(CXXFLAGS) $< -o $@
 
 clean:
