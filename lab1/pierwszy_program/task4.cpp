@@ -1,7 +1,10 @@
 #include <iostream>
 
-// Napisz program, który pobierze od użytkownika jego imię i wiek,
-// a następnie wyświetli wiadomość powitalną.
+/*
+ * Napisz program, który
+ * pobierze od użytkownika jego imię i wiek,
+ * a następnie wyświetli wiadomość powitalną.
+ */
 
 int main() {
   std::string name;
