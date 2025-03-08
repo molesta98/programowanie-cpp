@@ -7,6 +7,8 @@ repos:
     -   id: trailing-whitespace
     -   id: end-of-file-fixer
     -   id: check-added-large-files
+    -   id: no-commit-to-branch
+        args: [--branch, main]
 - repo: https://github.com/pocc/pre-commit-hooks
   rev: v1.3.5
   hooks:
@@ -15,3 +17,7 @@ repos:
     - id: cpplint
       args: ["--filter=-legal/copyright,-zerodiv,-runtime/int,-build/include_what_you_use", "--linelength=120"]
     - id: include-what-you-use
+- repo: git@github.com:it-solutions-dm/pre-commit-hooks.git
+  rev: v1.0.0
+  hooks:
+    - id: auto_branch_name
