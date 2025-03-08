@@ -9,20 +9,20 @@
  * - Po wyświetleniu kwadratów zakończ działanie programu.
  */
 int main() {
-  short userValueN, result = 0, i;
+  short N, result = 0;
   const short BEGIN_VALUE = 1;
 
   std::cout << "Podaj liczbe N: ";
-  std::cin >> userValueN;
+  std::cin >> N;
 
-  if (userValueN < 0) {
+  if (N < 0) {
     std::cout << "Podana liczba jest mniejsza od 0" << std::endl;
     return 1;
   }
 
-  std::cout << "Kwadraty liczb od " << BEGIN_VALUE << " do " << userValueN
-            << ": " << std::endl;
-  for (i = 1; i <= userValueN; i++) {
+  std::cout << "Kwadraty liczb od " << BEGIN_VALUE << " do " << N << ": "
+            << std::endl;
+  for (int i = 1; i <= N; i++) {
     result = i * i;
     std::cout << i << "^2 = " << result << std::endl;
   }
