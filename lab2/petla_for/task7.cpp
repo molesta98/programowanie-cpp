@@ -17,7 +17,7 @@
  *   - Pierwsza i ostatnia kolumna wewnętrznych wierszy powinny być pionowymi
  *     kreskami |.
  *   - Wnętrze wierszy tworzy naprzemienne znaki # i * na podstawie sumy
- indeksów wiersza i kolumny.
+ *     indeksów wiersza i kolumny.
 
 */
 int main() {
