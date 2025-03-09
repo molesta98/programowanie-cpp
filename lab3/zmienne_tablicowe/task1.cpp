@@ -14,7 +14,7 @@
  */
 int main() {
   int count = 5;
-  int numbers[count], sum = 0;
+  int numbers[5], sum = 0;
   float avg = 0;
 
   for (int i = 0; i < count; i++) {
