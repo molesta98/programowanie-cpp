@@ -1,9 +1,8 @@
 #include <iostream>
 
 int main() {
-  short numberOfHours;
+  short numberOfHours, cost = 0;
   char typeOfVehicle;
-  double cost = 0;
 
   std::cout << "Podaj liczbe godzin parkowania: ";
   std::cin >> numberOfHours;

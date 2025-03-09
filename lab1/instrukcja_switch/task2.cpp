@@ -1,8 +1,8 @@
 #include <iostream>
 
 int main() {
-  const double KELVIN = 273.15;
-  double temperture;
+  const float KELVIN = 273.15;
+  float temperture;
   char temperatureUnit;
   std::string temperatureUnitName;
 
