@@ -1,5 +1,16 @@
 #include <iostream>
 
+/*
+ * Napisz program, który wczytuje od użytkownika liczbę całkowitą i sprawdza,
+ * czy jest ona parzysta oraz czy jest podzielna przez 3.
+ * Program powinien wyświetlić odpowiedni komunikat w zależności
+ * od wyników sprawdzenia.
+ * Wskazówki:
+ * - Wykorzystaj instrukcje warunkowe if do sprawdzenia parzystości i
+ *   podzielności przez 3.
+ * - Możesz użyć operatorów % (modulo) do sprawdzenia reszty z dzielenia
+ *   przez 2 (czy liczba jest parzysta) i 3 (czy liczba jest podzielna przez 3).
+ */
 int main() {
   int yourNumber;
   std::string even, divisible;
