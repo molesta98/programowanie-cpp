@@ -11,7 +11,8 @@
  */
 
 int main() {
-  short N, sum = 0, i = 1;
+  short N, sum = 0;
+  int i = 1;
 
   std::cout << "Podaj liczbe N: ";
   std::cin >> N;
