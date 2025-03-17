@@ -13,7 +13,7 @@
  */
 int main() {
   int numbers[10];
-  int evenSum = 0;
+  int sum = 0;
   int count = 10;
 
   for (int i = 0; i < 10; ++i) {
@@ -28,12 +28,12 @@ int main() {
       if (i < count) {
         std::cout << ", ";
       }
-      evenSum += numbers[i];
+      sum += numbers[i];
     }
   }
   std::cout << std::endl;
 
-  std::cout << "Suma liczb parzystych: " << evenSum << std::endl;
+  std::cout << "Suma liczb parzystych: " << sum << std::endl;
 
   return 0;
 }
