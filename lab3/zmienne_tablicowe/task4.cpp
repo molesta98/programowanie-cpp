@@ -1,0 +1,39 @@
+#include "iostream"
+
+/*
+ * Napisz program, który pozwoli użytkownikowi wprowadzić 10 liczb całkowitych
+ * do tablicy jednowymiarowej, a następnie wyświetli liczby parzyste po
+ * przecinku i obliczy sumę wszystkich liczb parzystych.
+ * Kroki do wykonania:
+ *   - Użytkownik wprowadza liczby całkowite.
+ *   - Program przeszukuje tablicę, sprawdzając, które liczby są parzyste,
+ *     wyświetla je i dodaje do sumy.
+ *   - Program wyświetla liczby parzyste po przecinku.
+ *   - Program wyświetla sumę wszystkich liczb parzystych.
+ */
+int main() {
+  int numbers[10];
+  int evenSum = 0;
+  int count = 10;
+
+  for (int i = 0; i < 10; ++i) {
+    std::cout << "Podaj liczbe nr " << i + 1 << ": ";
+    std::cin >> numbers[i];
+  }
+
+  std::cout << "Liczby parzyste: ";
+  for (int i = 0; i < 10; ++i) {
+    if (numbers[i] % 2 == 0) {
+      std::cout << numbers[i];
+      if (i < count) {
+        std::cout << ", ";
+      }
+      evenSum += numbers[i];
+    }
+  }
+  std::cout << std::endl;
+
+  std::cout << "Suma liczb parzystych: " << evenSum << std::endl;
+
+  return 0;
+}
