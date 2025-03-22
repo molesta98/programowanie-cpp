@@ -14,12 +14,13 @@
  */
 
 int main() {
-  int array[3][3];
+  const int SIZE = 3;
+  int array[SIZE][SIZE];
   int sum = 0;
 
   std::cout << "Podaj 9 liczb calkowitych do macierzy 3x3:\n";
-  for (int i = 0; i < 3; i++) {
-    for (int j = 0; j < 3; j++) {
+  for (int i = 0; i < SIZE; i++) {
+    for (int j = 0; j < SIZE; j++) {
       std::cout << "Podaj liczbe dla wiersza " << i + 1 << ", kolumny " << j + 1
                 << ": ";
       std::cin >> array[i][j];
