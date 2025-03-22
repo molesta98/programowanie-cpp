@@ -21,10 +21,6 @@ int main() {
       std::cout << "Podaj liczbe dla wiersza " << i + 1 << ", kolumny " << j + 1
                 << ": ";
       std::cin >> matrix[i][j];
-    }
-  }
-  for (int i = 0; i < count; i++) {
-    for (int j = 0; j < count; j++) {
       sum += matrix[i][j];
     }
   }
