@@ -1,4 +1,4 @@
-#include "iostream"
+#include <iostream>
 
 /*
  * Napisz program, który wczyta od użytkownika macierz 3x3
@@ -12,12 +12,13 @@
 
 */
 int main() {
-  int matrix[3][3];
-  int sum = 0, count = 3;
+  const int SIZE = 3;
+  int matrix[SIZE][SIZE];
+  int sum = 0;
 
   std::cout << "Podaj 9 liczb calkowitych do macierzy 3x3:" << std::endl;
-  for (int i = 0; i < count; i++) {
-    for (int j = 0; j < count; j++) {
+  for (int i = 0; i < SIZE; i++) {
+    for (int j = 0; j < SIZE; j++) {
       std::cout << "Podaj liczbe dla wiersza " << i + 1 << ", kolumny " << j + 1
                 << ": ";
       std::cin >> matrix[i][j];

@@ -12,20 +12,20 @@
  *   - Program wyświetla sumę wszystkich liczb parzystych.
  */
 int main() {
-  int numbers[10];
+  const int SIZE = 10;
+  int numbers[SIZE];
   int sum = 0;
-  int count = 10;
 
-  for (int i = 0; i < 10; ++i) {
+  for (int i = 0; i < SIZE; ++i) {
     std::cout << "Podaj liczbe nr " << i + 1 << ": ";
     std::cin >> numbers[i];
   }
 
   std::cout << "Liczby parzyste: ";
-  for (int i = 0; i < 10; ++i) {
+  for (int i = 0; i < SIZE; ++i) {
     if (numbers[i] % 2 == 0) {
       std::cout << numbers[i];
-      if (i < count) {
+      if (i < SIZE) {
         std::cout << ", ";
       }
       sum += numbers[i];
