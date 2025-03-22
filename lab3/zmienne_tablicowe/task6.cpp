@@ -13,8 +13,7 @@
 */
 int main() {
   int matrix[3][3];
-  int sum = 0;
-  int count = 3;
+  int sum = 0, count = 3;
 
   std::cout << "Podaj 9 liczb calkowitych do macierzy 3x3:" << std::endl;
   for (int i = 0; i < count; i++) {
