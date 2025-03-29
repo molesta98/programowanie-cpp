@@ -1,6 +1,5 @@
 #include <cstring>
 #include <iostream>
-
 /*
  * Napisz program, który odwróci podany przez użytkownika ciąg znaków i
  * wyświetli wynik. Kroki do wykonania:
@@ -14,9 +13,17 @@
  */
 
 int main() {
-  std::string exampleString;
+  const short MAX_LENGTH = 100;
+  char inputString[MAX_LENGTH];
+  char reversedString[MAX_LENGTH];
 
   std::cout << "Podaj ciag znakow: ";
-  std::getline(std::cin, exampleString);
-  std::cout << exampleString << std::endl;
+  std::cin.getline(inputString, MAX_LENGTH);
+  int stringLength = strlen(inputString);
+  for (int i = 0; i < stringLength; i++) {
+    reversedString[i] = inputString[stringLength - 1 - i];
+  }
+  std::cout << "Odwrocony ciag: " << reversedString << std::endl;
+
+  return 0;
 }
