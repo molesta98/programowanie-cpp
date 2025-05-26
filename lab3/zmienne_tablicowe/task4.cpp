@@ -1,16 +1,5 @@
 #include "iostream"
 
-/*
- * Napisz program, który pozwoli użytkownikowi wprowadzić 10 liczb całkowitych
- * do tablicy jednowymiarowej, a następnie wyświetli liczby parzyste po
- * przecinku i obliczy sumę wszystkich liczb parzystych.
- * Kroki do wykonania:
- *   - Użytkownik wprowadza liczby całkowite.
- *   - Program przeszukuje tablicę, sprawdzając, które liczby są parzyste,
- *     wyświetla je i dodaje do sumy.
- *   - Program wyświetla liczby parzyste po przecinku.
- *   - Program wyświetla sumę wszystkich liczb parzystych.
- */
 int main() {
   const int SIZE = 10;
   int numbers[SIZE];

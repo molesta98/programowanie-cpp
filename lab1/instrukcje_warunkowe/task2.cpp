@@ -1,21 +1,5 @@
 #include <iostream>
 
-/*
- * Napisz program, który oblicza wskaźnik masy ciała (BMI)
- * na podstawie wprowadzonych przez użytkownika danych:
- * masy ciała w kilogramach i wzrostu w metrach. Program powinien
- * następnie wyświetlić interpretację wyniku BMI
- * na podstawie poniższych kategorii:
- * - BMI poniżej 18.5: Niedowaga
- * - BMI od 18.5 do 24.9: W normie
- * - BMI od 25 do 29.9: Nadwaga
- * - BMI powyżej 30: Otyłość
- * Wskazówki:
- * Skorzystaj z instrukcji warunkowej if-else do porównania wartości
- * BMI z przedziałami i ustalenia odpowiedniej kategorii.
- * Wagę podajemy w kg a wzrost w metrach.
- * Do obliczenia BMI użyj wzoru: BMI = masa_ciała / (wzrost * wzrost).
- */
 int main() {
   float weight, height, BMI;
   std::string bmiStatus;

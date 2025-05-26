@@ -1,11 +1,5 @@
 #include <iostream>
 
-/*
- * Stwórz program, który wyświetli różne typy danych:
- * int, float, char, oraz bool.
- * Zainicjuj zmienne tymi typami i wyświetl ich wartości.
- */
-
 int main() {
   int a = 5;
   float b = 3.14;

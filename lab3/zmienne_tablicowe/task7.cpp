@@ -1,18 +1,5 @@
 #include <iostream>
 
-/*
- * Napisz program, który wczyta od użytkownika
- * macierz 2x3 (2 wiersze i 3 kolumny) i zapisze ją do
- * dwuwymiarowej tablicy. Następnie program obliczy transpozycję
- * tej macierzy (zamieni wiersze z kolumnami) i wyświetli wynik.
- * Kroki do wykonania:
- * - Program wczytuje sześć liczb całkowitych od
- *   użytkownika i zapisuje je w dwuwymiarowej tablicy 2x3.
- * - Program tworzy nową macierz 3x2 do przechowywania transpozycji.
- * - Program przechodzi przez elementy oryginalnej macierzy i
- *   przypisuje je do odpowiednich miejsc w macierzy transponowanej.
- * - Na końcu program wyświetla transponowaną macierz.
- */
 int main() {
   const int RAWS = 2, COLS = 3;
   int array[RAWS][COLS];
