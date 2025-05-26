@@ -2,12 +2,9 @@
 #include <fstream>
 #include <iostream>
 
-int FileExist(std::string fileName) {
+bool FileExists(const std::string& fileName) {
   std::ifstream file(fileName);
-  if (!file.good()) return 0;
-  file.close();
-
-  return 1;
+  return file.good();
 }
 
 int CreateFile(std::string fileName) {
@@ -21,7 +18,7 @@ int CreateFile(std::string fileName) {
 }
 
 int RemoveFile(std::string fileName) {
-  if (FileExist(fileName) == 1)
+  if (FileExists(fileName) == 1)
     std::remove(fileName.c_str());
   else
     return 1;
@@ -29,7 +26,7 @@ int RemoveFile(std::string fileName) {
 }
 
 int RenameFile(std::string fileName, std::string newFileName) {
-  if (FileExist(fileName) == 1)
+  if (FileExists(fileName) == 1)
     std::rename(fileName.c_str(), newFileName.c_str());
   else
     return 1;
