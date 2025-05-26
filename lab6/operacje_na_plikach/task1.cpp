@@ -2,7 +2,7 @@
 #include <iostream>
 
 int main() {
-  std::string imie, nazwisko;
+  char *imie, nazwisko;
   short wiek;
 
   std::ifstream plik("dane.txt");
@@ -10,7 +10,7 @@ int main() {
     std::cout << "Nie można otworzyć pliku!" << std::endl;
     return 1;
   }
-  std::string linia;
+  char* linia;
 
   while (plik >> imie >> nazwisko >> wiek) {
     std::cout << "Imię: " << imie << ", Nazwisko: " << nazwisko
