@@ -14,10 +14,7 @@ int CalculateSumRecursive(int number) {
   return number + CalculateSumRecursive(number - 1);
 }
 
-void DisplayResult(int number, int sum) {
-  std::cout << "Suma liczb od 1 do " << number << " wynosi: " << sum
-            << std::endl;
-}
+void DisplayResult(int sum) { std::cout << sum << std::endl; }
 
 int main() {
   int number = GetNumberFromUser();
@@ -26,6 +23,7 @@ int main() {
     std::cout << "Liczba musi byc wieksza od 0" << std::endl;
     return 1;
   }
-  DisplayResult(number, sum);
+  std::cout << "Suma liczb od 1 do " << number << " wynosi: ";
+  DisplayResult(sum);
   return 0;
 }
