@@ -1,17 +1,5 @@
 #include <iostream>
 
-/*
- * Napisz program, który wczyta od użytkownika pięć liczb
- * całkowitych i zapisze je do tablicy.
- * Następnie program obliczy średnią tych liczb i wyświetli wynik.
- * Kroki do wykonania:
- * - Program wczytuje pięć liczb całkowitych od użytkownika i zapisuje je w
- *   tablicy jednowymiarowej.
- * - Program przechodzi przez wszystkie elementy tablicy, sumując ich wartości.
- * - Po obliczeniu sumy program dzieli ją przez liczbę elementów, aby uzyskać
- *   średnią.
- * - Na końcu program wyświetla wynik obliczonej średniej.
- */
 int main() {
   int count = 5;
   int numbers[5], sum = 0;

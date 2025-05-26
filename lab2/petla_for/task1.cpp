@@ -1,14 +1,5 @@
 #include <iostream>
 
-/*
- * Napisz program, który obliczy sumę wszystkich liczb od 1 do N,
- * gdzie N zostanie podane przez użytkownika.
- * Użyj pętli for, aby wykonać to zadanie.
- * - Poproś użytkownika o podanie liczby całkowitej dodatniej N.
- * - Użyj pętli for, aby dodać wszystkie liczby od 1 do N i wyświetlić wynik
- *   sumy na ekranie.
- * - Po wyświetleniu wyniku zakończ działanie programu.
- */
 int main() {
   short N, sum = 0;
   const short BEGIN_VALUE = 1;

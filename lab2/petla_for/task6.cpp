@@ -1,14 +1,5 @@
 #include <iostream>
 
-/*
- * Napisz program, który poprosi użytkownika o podanie szerokości i
- * wysokości prostokąta, a następnie wyświetli ramkę prostokąta
- * utworzoną z gwiazdek *. Program powinien użyć zagnieżdżonej
- * pętli for, aby narysować ramkę, gdzie:
- * - Pierwszy i ostatni wiersz będą całkowicie wypełnione gwiazdkami.
- * - Pierwsza i ostatnia kolumna będą całkowicie wypełnione gwiazdkami.
- * - W pozostałych przypadkach, czyli środek, będzie pusty (spacje).
- */
 int main() {
   short height, width;
   char frame = '*';

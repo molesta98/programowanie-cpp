@@ -1,11 +1,5 @@
 #include <iostream>
 
-/*
- * Napisz program, który pobierze dwie liczby od użytkownika,
- * wyświetli ich sumę, a następnie poinformuje użytkownika,
- * czy wynik jest liczbą parzystą czy nieparzystą.
- */
-
 int main() {
   short firstNumber, secondNumber;
   short sum = 0;
