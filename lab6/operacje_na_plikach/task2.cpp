@@ -2,12 +2,20 @@
 #include <fstream>
 #include <iostream>
 
-bool FileExists(const std::string& fileName) {
+void printMenu() {
+  std::cout << "Wybierz operację:\n"
+            << "1 - Utwórz nowy plik\n"
+            << "2 - Usuń plik\n"
+            << "3 - Zmień nazwę pliku\n"
+            << "Twój wybór: ";
+}
+
+bool fileExists(const std::string& fileName) {
   std::ifstream file(fileName);
   return file.good();
 }
 
-int CreateFile(std::string fileName) {
+int createFile(std::string fileName) {
   std::ofstream plik(fileName);
   if (!plik.is_open()) {
     return 1;
@@ -17,16 +25,17 @@ int CreateFile(std::string fileName) {
   return 0;
 }
 
-int RemoveFile(std::string fileName) {
-  if (FileExists(fileName) == 1)
+int removeFile(std::string fileName) {
+  if (fileExists(fileName))
     std::remove(fileName.c_str());
   else
     return 1;
+
   return 0;
 }
 
-int RenameFile(std::string fileName, std::string newFileName) {
-  if (FileExists(fileName) == 1)
+int renameFile(std::string fileName, std::string newFileName) {
+  if (fileExists(fileName))
     std::rename(fileName.c_str(), newFileName.c_str());
   else
     return 1;
@@ -37,18 +46,15 @@ int RenameFile(std::string fileName, std::string newFileName) {
 int main() {
   std::string fileName;
   char decision;
-  std::cout << "Wybierz operację:\n"
-               "1 - Utwórz nowy plik\n"
-               "2 - Usuń plik\n"
-               "3 - Zmień nazwę pliku\n";
-  std::cout << "Twój wybór: ";
+
+  printMenu();
   std::cin >> decision;
 
   switch (decision) {
     case '1':
       std::cout << "Podaj nazwę nowego pliku: ";
       std::cin >> fileName;
-      if (CreateFile(fileName) == 0)
+      if (createFile(fileName) == 0)
         std::cout << "Plik '" << fileName << "' został utworzony." << std::endl;
       else
         std::cout << "Tworzenie pliku nie powiodło się!" << std::endl;
@@ -56,7 +62,7 @@ int main() {
     case '2':
       std::cout << "Podaj nazwę pliku do usunięcia: ";
       std::cin >> fileName;
-      if (RemoveFile(fileName) == 0)
+      if (removeFile(fileName) == 0)
         std::cout << "Plik '" << fileName << "' został pomyślnie usunięty."
                   << std::endl;
       else
@@ -69,7 +75,7 @@ int main() {
       std::cin >> fileName;
       std::cout << "Podaj nową nazwę pliku: ";
       std::cin >> newFileName;
-      if (RenameFile(fileName, newFileName) == 0)
+      if (renameFile(fileName, newFileName) == 0)
         std::cout << "Plik został pomyślnie zmieniony na " << newFileName
                   << std::endl;
       else
