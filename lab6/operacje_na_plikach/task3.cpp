@@ -72,6 +72,10 @@ int main() {
     std::cin >> nowaOsoba.nazwisko;
     std::cout << "Podaj wiek: ";
     std::cin >> nowaOsoba.wiek;
+    if (nowaOsoba.wiek <= 0) {
+      std::cout << "Niepoprawny wiek. Spróbuj ponownie.\n";
+      return 1;
+    }
 
     dopiszOsobe(fileName, nowaOsoba);
   }
