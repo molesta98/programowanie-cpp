@@ -9,7 +9,7 @@ void GetArrayFromUser(int arr[], int size) {
 
 int FindMaxValue(int arr[], int size) {
   int maxVal = arr[0];
-  for (int i = 1; i < size; ++i) {
+  for (int i = 1; i < size; i++) {
     if (arr[i] > maxVal) {
       maxVal = arr[i];
     }

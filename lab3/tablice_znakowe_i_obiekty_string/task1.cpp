@@ -2,8 +2,8 @@
 
 int main() {
   const int SIZE = 21;
-  char buffer[SIZE];
+  char array[SIZE];
   std::cout << "Podaj ciag znakow (max 20 znakow): ";
-  std::cin.getline(buffer, SIZE);
-  std::cout << "Wprowadzony ciag znakow: " << buffer << std::endl;
+  std::cin.getline(array, SIZE);
+  std::cout << "Wprowadzony ciag znakow: " << array << std::endl;
 }

@@ -2,12 +2,12 @@
 
 int main() {
   const int SIZE = 21;
-  char buffer[SIZE];
+  char array[SIZE];
   std::cout << "Podaj ciag znakow (max 20 znakow): ";
-  std::cin.getline(buffer, SIZE);
+  std::cin.getline(array, SIZE);
 
   for (int i = 0; i < SIZE - 1; i++) {
-    if (buffer[i] == 'a') buffer[i] = 'o';
+    if (array[i] == 'a') array[i] = 'o';
   }
-  std::cout << "Zmodyfikowany ciag znakow: " << buffer << std::endl;
+  std::cout << "Zmodyfikowany ciag znakow: " << array << std::endl;
 }
