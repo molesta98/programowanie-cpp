@@ -20,8 +20,8 @@ int main() {
   std::cout << "Dane przed modyfikacją:" << std::endl;
   WyswietlDane(osoba);
 
-  osoba.imie = "Daniel";
-  osoba.nazwisko = "Molenda";
+  osoba.imie = "Jan";
+  osoba.nazwisko = "Kowalski";
   osoba.wiek = 27;
   std::cout << "\nDane po modyfikacji:" << std::endl;
   WyswietlDane(osoba);
