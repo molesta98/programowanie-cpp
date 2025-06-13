@@ -8,7 +8,7 @@ struct Osoba {
 
 int main() {
   const int SIZE = 3;
-  Osoba Osoba[SIZE] = {{"Daniel", "Molenda", 27},
+  Osoba Osoba[SIZE] = {{"Janusz", "Kowalski", 27},
                        {"Jan", "Nowak", 30},
                        {"Piotr", "Wiśniewski", 40}};
 
