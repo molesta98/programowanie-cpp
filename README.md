@@ -1,4 +1,4 @@
-# PROGRAMOWANIE-C++ 💻
+# programowanie-cpp 💻
 
 Repozytorium zawiera zestaw ćwiczeń laboratoryjnych z programowania w języku C++. Każdy folder `labX` odpowiada konkretnym zagadnieniom omawianym podczas zajęć.
 
@@ -7,28 +7,28 @@ Repozytorium zawiera zestaw ćwiczeń laboratoryjnych z programowania w języku 
 ```
 programowanie-cpp/
 │
-├── lab1/                     # Podstawy składni C++
+├── lab1/
 │   ├── instrukcja_switch/
 │   ├── instrukcje_warunkowe/
 │   └── pierwszy_program/
 │
-├── lab2/                     # Pętle: for, while, do-while
+├── lab2/
 │   ├── petla_for/
 │   └── petla_while_i_do_while/
 │
-├── lab3/                     # Tablice i napisy
+├── lab3/
 │   ├── tablice_znakowe_i_obiekty_string/
 │   └── zmienne_tablicowe/
 │
-├── lab4/                     # Funkcje i rekurencja
+├── lab4/
 │   ├── funkcje/
 │   └── rekurencja_i_przeciazenie_funkcji/
 │
-├── lab5/                     # Struktury danych i wskaźniki
+├── lab5/
 │   ├── struktury_danych/
 │   └── wskazniki/
 │
-├── lab6/                     # Operacje wejścia wyjścia
+├── lab6/
 │   └── operacje_na_plikach/
 │
 ├── .gitignore
