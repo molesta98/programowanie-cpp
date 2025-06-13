@@ -1,17 +1,16 @@
 #include <ctime>
 #include <iostream>
 
-// Funkcja losująca liczby z podanego przedziału
-void LosujTablice(int* array, int size, int min, int max, unsigned int* seed) {
-  for (int i = 0; i < size; ++i) {
-    array[i] = min + rand_r(seed) % (max - min + 1);
+void LosujTablice(int *array, int size, int minRange, int maxRange) {
+  unsigned int seed = time(0);
+  for (int i = 0; i < size; i++) {
+    array[i] = minRange + rand_r(&seed) % (maxRange - minRange + 1);
   }
 }
 
-// Sprawdza, czy liczba użytkownika znajduje się w tablicy
-bool SprawdzLiczbe(int liczba, int* array, int size) {
-  for (int i = 0; i < size; ++i) {
-    if (array[i] == liczba) {
+bool SprawdzLiczbe(int *userNumber, int *array, int arraySize) {
+  for (int i = 0; i < arraySize; i++) {
+    if (array[i] == *userNumber) {
       return true;
     }
   }
@@ -19,54 +18,51 @@ bool SprawdzLiczbe(int liczba, int* array, int size) {
 }
 
 int main() {
-  unsigned int seed = time(0);
+  int arraySize;
+  int minRange, maxRange;
 
-  int iloscLiczb;
-  int minZakres, maxZakres;
+  std::cout << "Ile liczb chcesz wylosowac? ";
+  std::cin >> arraySize;
 
-  std::cout << "Ile liczb wylosowac? ";
-  std::cin >> iloscLiczb;
+  std::cout << "Podaj poczatek przedzialu: ";
+  std::cin >> minRange;
 
-  std::cout << "Wartosc poczatkowa: ";
-  std::cin >> minZakres;
+  std::cout << "Podaj koniec przedzialu: ";
+  std::cin >> maxRange;
 
-  std::cout << "Wartosc koncowa: ";
-  std::cin >> maxZakres;
-
-  if (minZakres > maxZakres) {
-    std::cout << "Blad: wartosc poczatkowa nie moze byc wieksza od koncowej."
-              << std::endl;
+  if (minRange > maxRange) {
+    std::cout << "Nieprawidlowy przedzial (poczatek > koniec)" << std::endl;
     return 1;
   }
 
-  int* tablica = new int[iloscLiczb];
-  LosujTablice(tablica, iloscLiczb, minZakres, maxZakres, &seed);
+  int *array = new int[arraySize];
+  LosujTablice(array, arraySize, minRange, maxRange);
 
   std::cout << "Tablica: ";
-  for (int i = 0; i < iloscLiczb; ++i) {
-    std::cout << tablica[i];
-    if (i < iloscLiczb - 1) std::cout << ", ";
+  for (int i = 0; i < arraySize; ++i) {
+    std::cout << array[i];
+    if (i < arraySize - 1) {
+      std::cout << ", ";
+    }
   }
   std::cout << std::endl;
 
-  int tries, triesCounter = 0;
+  int userNumber;
+  int tries = 0;
 
-  // Gra
-  do {
+  while (true) {
     std::cout << "Podaj liczbe: ";
-    std::cin >> tries;
-    triesCounter++;
+    std::cin >> userNumber;
+    tries++;
 
-    if (SprawdzLiczbe(tries, tablica, iloscLiczb)) {
-      std::cout << "Zgadles!" << std::endl;
+    if (SprawdzLiczbe(&userNumber, array, arraySize)) {
+      std::cout << "Zgadles za " << tries << " razem." << std::endl;
       break;
     } else {
       std::cout << "Nie zgadles" << std::endl;
     }
-  } while (true);
+  }
 
-  std::cout << "Zgadles za " << triesCounter << " razem." << std::endl;
-
-  delete[] tablica;  // zwolnienie pamięci
+  delete[] array;
   return 0;
 }
