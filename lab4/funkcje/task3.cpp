@@ -15,7 +15,7 @@ std::string ReverseString(std::string input) {
     ++len;
   }
 
-  for (int i = 0; i < len / 2; ++i) {
+  for (int i = 0; i < len / 2; i++) {
     char tmp = input[i];
     input[i] = input[len - 1 - i];
     input[len - 1 - i] = tmp;

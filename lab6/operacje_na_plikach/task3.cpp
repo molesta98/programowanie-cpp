@@ -8,12 +8,12 @@ struct Osoba {
   short wiek;
 };
 
-bool fileExists(const std::string& fileName) {
+bool FileExists(const std::string& fileName) {
   std::ifstream file(fileName);
   return file.good();
 }
 
-void zapisPrzykladowychDanych(const std::string& fileName) {
+void SaveSampleData(const std::string& fileName) {
   std::ofstream file(fileName);
   if (file.is_open()) {
     file << "Jan Kowalski 25\n";
@@ -28,26 +28,26 @@ void zapisPrzykladowychDanych(const std::string& fileName) {
   }
 }
 
-void dopiszOsobe(const std::string& fileName, const Osoba& osoba) {
+void AppendPerson(const std::string& fileName, const Osoba& person) {
   std::ofstream file(fileName, std::ios::app);
   if (file.is_open()) {
-    file << osoba.imie << " " << osoba.nazwisko << " " << osoba.wiek << "\n";
+    file << person.imie << " " << person.nazwisko << " " << person.wiek << "\n";
     file.close();
   } else {
     std::cout << "Nie można dopisać do pliku " << fileName << std::endl;
   }
 }
 
-void wyswietlZawartoscPliku(const std::string& fileName) {
+void DisplayFileContents(const std::string& fileName) {
   std::ifstream file(fileName);
-  std::string imie, nazwisko;
-  short wiek;
+  std::string imie, surname;
+  short age;
 
   std::cout << "\nDane w pliku po dopisaniu:" << std::endl;
 
-  while (file >> imie >> nazwisko >> wiek) {
-    std::cout << "Imię: " << imie << ", Nazwisko: " << nazwisko
-              << ", Wiek: " << wiek << std::endl;
+  while (file >> imie >> surname >> age) {
+    std::cout << "Imię: " << imie << ", Nazwisko: " << surname
+              << ", Wiek: " << age << std::endl;
   }
 
   file.close();
@@ -56,31 +56,31 @@ void wyswietlZawartoscPliku(const std::string& fileName) {
 int main() {
   const std::string fileName = "dane.txt";
 
-  if (!fileExists(fileName)) {
-    zapisPrzykladowychDanych(fileName);
+  if (!FileExists(fileName)) {
+    SaveSampleData(fileName);
   }
 
-  char decyzja;
+  char decision;
   std::cout << "Czy chcesz dodać nową osobę? (t/n): ";
-  std::cin >> decyzja;
+  std::cin >> decision;
 
-  if (decyzja == 't' || decyzja == 'T') {
-    Osoba nowaOsoba;
+  if (decision == 't' || decision == 'T') {
+    Osoba newPerson;
     std::cout << "Podaj imię: ";
-    std::cin >> nowaOsoba.imie;
+    std::cin >> newPerson.imie;
     std::cout << "Podaj nazwisko: ";
-    std::cin >> nowaOsoba.nazwisko;
+    std::cin >> newPerson.nazwisko;
     std::cout << "Podaj wiek: ";
-    std::cin >> nowaOsoba.wiek;
-    if (nowaOsoba.wiek <= 0) {
+    std::cin >> newPerson.wiek;
+    if (newPerson.wiek <= 0) {
       std::cout << "Niepoprawny wiek. Spróbuj ponownie.\n";
       return 1;
     }
 
-    dopiszOsobe(fileName, nowaOsoba);
+    AppendPerson(fileName, newPerson);
   }
 
-  wyswietlZawartoscPliku(fileName);
+  DisplayFileContents(fileName);
 
   return 0;
 }

@@ -5,17 +5,20 @@ float CalculateVolume(float a, float b, float h);
 float CalculateVolume(float r, float h);
 void DisplayResult(float volume);
 
+void DisplayMenu() {
+  std::cout << "Wybierz bryle do obliczenia objetosci:\n"
+               "1 - Szescian (V = a^3)\n"
+               "2 - Prostopadloscian (V = a * b * h)\n"
+               "3 - Walec (V = pi * r^2 * h)\n"
+               "Wybierz numer bryly: ";
+}
 const float PI = 3.1415;
 
 int main() {
   int decision;
   float a, b, h, r;
 
-  std::cout << "Wybierz bryle do obliczenia objetosci:\n"
-               "1 - Szescian (V = a^3)\n"
-               "2 - Prostopadloscian (V = a * b * h)\n"
-               "3 - Walec (V = pi * r^2 * h)\n";
-  std::cout << "Wybierz numer bryly: ";
+  DisplayMenu();
   std::cin >> decision;
 
   switch (decision) {
