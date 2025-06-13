@@ -4,7 +4,7 @@ int main() {
   short examResult;
   std::string grade;
 
-  std::cout << "Podaj wynik egzaminu (liczba punktow): ";
+  std::cout << "Podaj wynik egzaminu (liczba punktow - maksymalnie 100): ";
   std::cin >> examResult;
 
   if (examResult >= 0 && examResult <= 49) {
