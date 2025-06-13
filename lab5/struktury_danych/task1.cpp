@@ -6,7 +6,7 @@ struct Osoba {
   short wiek;
 };
 
-void WyswietlDane(const Osoba& osoba) {
+void WyswietlDane(const Osoba osoba) {
   std::cout << "Imię: " << osoba.imie << ", Nazwisko: " << osoba.nazwisko
             << ", Wiek: " << osoba.wiek << std::endl;
 }

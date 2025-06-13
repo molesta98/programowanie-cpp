@@ -6,7 +6,7 @@ struct Samochod {
   short rok_produkcji;
 };
 
-void WyswietlDane(const Samochod& samochod) {
+void WyswietlDane(const Samochod samochod) {
   std::cout << "Marka: " << samochod.marka << std::endl;
   std::cout << "Model: " << samochod.model << std::endl;
   std::cout << "Rok produkcji: " << samochod.rok_produkcji << std::endl;
