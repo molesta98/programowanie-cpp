@@ -6,9 +6,7 @@ int main() {
   std::cin >> N;
 
   do {
-    if (i % 2 == 0) {
-      evenNumbers++;
-    }
+    if (i % 2 == 0) evenNumbers++;
     i++;
   } while (N >= i);
 
