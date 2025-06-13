@@ -47,15 +47,15 @@ programowanie-cpp/
 W katalogu dla konkretnego laboratorium uruchom w terminalu:
 
 ```bash
-make task1     # Kompiluje i uruchamia task1.cpp
-make task2     # Kompiluje i uruchamia task2.cpp
-make task3     # Kompiluje i uruchamia task3.cpp
+make task1     # Kompiluje i tworzy plik wykonywalny dla task1.cpp
+make task2     # Kompiluje i tworzy plik wykonywalny dla task2.cpp
+make task3     # Kompiluje i tworzy plik wykonywalny dla task3.cpp
 ```
 lub
 ```bash
 make
 ```
-który utworzy katalog bin i wykona kroki opisane w pliku Makefile, czyli w tym przypadku wykona kompilacje plików z danego podkatalogu i plik wykonywalny umieści w podkatalogu bin
+który utworzy katalog bin i wykona kroki opisane w pliku Makefile, czyli wykona kompilacje plików z danego podkatalogu i plik wykonywalny umieści w podkatalogu bin
 
 🛠️ Ręczna kompilacja
 ```
@@ -70,4 +70,11 @@ Jeśli chcesz przetestować pliki z podkatalogów labX, przejdź do odpowiednieg
 cd lab1/instrukcja_switch
 g++ task1.cpp -o task1
 ./task1
+```
+
+lub
+```
+cd lab1/instrukcja_switch
+make
+./bin/task1
 ```
