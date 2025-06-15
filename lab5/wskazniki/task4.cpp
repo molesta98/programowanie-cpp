@@ -2,16 +2,15 @@
 #include <iostream>
 
 void LosujTablice(int *array, int size) {
-  // Use time as a seed for random number generation
   unsigned int seed = time(0);
   for (int i = 0; i < size; i++) {
     array[i] = rand_r(&seed) % 51;
   }
 }
 
-bool SprawdzLiczbe(int *userNumber, int *array, int arraySize) {
+bool SprawdzLiczbe(int userNumber, int *array, int arraySize) {
   for (int i = 0; i < arraySize; i++) {
-    if (array[i] == *userNumber) {
+    if (array[i] == userNumber) {
       return true;
     }
   }
@@ -39,7 +38,7 @@ int main() {
     std::cin >> userNumber;
     tries++;
 
-    if (SprawdzLiczbe(&userNumber, array, ARRAY_SIZE)) {
+    if (SprawdzLiczbe(userNumber, array, ARRAY_SIZE)) {
       std::cout << "Zgadles za " << tries << " razem." << std::endl;
       break;
     } else {
