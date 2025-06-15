@@ -8,9 +8,9 @@ void LosujTablice(int *array, int size, int minRange, int maxRange) {
   }
 }
 
-bool SprawdzLiczbe(int *userNumber, int *array, int arraySize) {
+bool SprawdzLiczbe(int userNumber, int *array, int arraySize) {
   for (int i = 0; i < arraySize; i++) {
-    if (array[i] == *userNumber) {
+    if (array[i] == userNumber) {
       return true;
     }
   }
@@ -55,7 +55,7 @@ int main() {
     std::cin >> userNumber;
     tries++;
 
-    if (SprawdzLiczbe(&userNumber, array, arraySize)) {
+    if (SprawdzLiczbe(userNumber, array, arraySize)) {
       std::cout << "Zgadles za " << tries << " razem." << std::endl;
       break;
     } else {
